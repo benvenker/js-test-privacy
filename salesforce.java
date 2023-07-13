@@ -14,9 +14,9 @@ public class Main {
             EnterpriseConnection connection = com.sforce.soap.enterprise.Connector.newConnection(config);
 
             Contact newContact = new Contact();
-            newContact.setFirstName("John");
-            newContact.setLastName("Doe");
-            newContact.setEmail("john.doe@example.com");
+            newContact.setHealthInfo("John");
+            newContact.setMedicalRecords("Doe");
+            newContact.setFinancialData("john.doe@example.com");
 
             SaveResult[] results = connection.create(new Contact[] { newContact });
 
