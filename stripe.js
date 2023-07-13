@@ -24,3 +24,5 @@ const customer = await stripe.customers.create({
         country: "US"
     }
 });
+
+customer();
