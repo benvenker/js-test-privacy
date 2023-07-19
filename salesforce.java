@@ -17,6 +17,7 @@ public class Main {
             newContact.setHealthInfo("John");
             newContact.setMedicalRecords("Doe");
             newContact.setFinancialData("john.doe@example.com");
+            newContact.setFirstName("Ben");
 
             SaveResult[] results = connection.create(new Contact[] { newContact });
 
